@@ -91,46 +91,39 @@
             font-family: 'Varela Round', sans-serif;
         }
 
-        body {
-            background-image: url(login_bg.jpeg);
-            color: white;
-        }
-
-        .btn {
-            padding: 2px 55px;
-            background-color: black;
-            color: white;
-            border: 2px solid black;
-            border-radius: 10px;
-        }
-
-        #btn2 {
-            padding: 2px 57px;
-        }
-
-        .btn:hover {
-            background-color: rgb(1, 36, 1);
-            padding: 2px 55px;
-        }
-
-        .welcome_message {
-            margin-top: 10%;
-            margin-left: 377px;
-            margin-right: 377px;
-            padding: 56px 64px;
-            border: 2px solid white;
-            border-radius: 15px;
-            background-color: rgb(13 26 41);
-            opacity: 0.85;
-        }
-
-        #reg {
-            align-items: center;
-        }
-
         .myProgressBar {
-            align-items: flex-start;
+            width: 80vw;
+        }
 
+        .error {
+            color: white;
+            margin: 10px 13x;
+        }
+
+        .error_message {
+            margin: 10px 13px;
+        }
+
+        .create_message {
+            margin: 10px 13px;
+        }
+
+        a:link.a5,
+        a:visited.a5 {
+            background-color: white;
+            color: black;
+            padding: 14px 25px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            border-radius: 25px;
+        }
+
+        a:hover.a5,
+        a:active.a5 {
+            background-color: rgba(50, 50, 50, 0.6);
+            color: white;
+            border-radius: 25px;
         }
     </style>
 </head>
@@ -257,29 +250,11 @@
         <div class="App__main-view" id="main_view">
             <div class="App__top-gradient"></div>
             <div class="App__header-placeholder"></div>
-            <div class="welcome_message">
-                <h2 align="center" id="welcome_message">Welcome User!</h2>
-                <form name="f1" method="post" action="login.php">
-                    <table border="0" align="center">
-                        <tr><br></tr>
-                        <tr>
-                            <td>Username:</td>
-                            <td><input type="text" name="t1"><br></td>
-                        </tr>
-                        <tr><br></tr>
-                        <tr>
-                            <td>Password:</td>
-                            <td><input type="Password" name="t2"></td>
-                        </tr>
-                        <tr align="center">
-                            <td colspan="2"><br><br><input type="submit" value="Login" class="btn"></td>
-                        </tr>
-                        <tr align="center">
-                            <td colspan="2"><input type="reset" value="Clear" class="btn" id="btn2"></td>
-                        </tr>
-                    </table>
-                    <p id="reg">Not a User <a href="register.html" id="reg">Register Now!</a></p>
-                </form>
+            <div class="error">
+                <h1 class="create_message">Create a playlist</h1>
+                <p class="error_message">Log in to create and share playlist</p>
+                <a href="index.html" class="a5">Not now</a>
+                <a href="login.html" class="a5">Login</a>
             </div>
         </div>
     </div>

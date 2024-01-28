@@ -10,7 +10,7 @@
     <title>Spotify Clone Project</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles3.css" />
     <style>
         a:link.a1,
         a:visited.a1 {
@@ -19,7 +19,7 @@
             padding: 14px 25px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
+            /* display: inline-block; */
         }
 
 
@@ -31,7 +31,7 @@
             padding: 14px 25px;
             text-align: center;
             text-decoration: none;
-            display: inline-block;
+            /* display: inline-block; */
         }
 
 
@@ -91,46 +91,36 @@
             font-family: 'Varela Round', sans-serif;
         }
 
-        body {
-            background-image: url(login_bg.jpeg);
-            color: white;
-        }
-
-        .btn {
-            padding: 2px 55px;
-            background-color: black;
-            color: white;
-            border: 2px solid black;
-            border-radius: 10px;
-        }
-
-        #btn2 {
-            padding: 2px 57px;
-        }
-
-        .btn:hover {
-            background-color: rgb(1, 36, 1);
-            padding: 2px 55px;
-        }
-
-        .welcome_message {
-            margin-top: 10%;
-            margin-left: 377px;
-            margin-right: 377px;
-            padding: 56px 64px;
-            border: 2px solid white;
-            border-radius: 15px;
-            background-color: rgb(13 26 41);
-            opacity: 0.85;
-        }
-
-        #reg {
-            align-items: center;
-        }
-
         .myProgressBar {
-            align-items: flex-start;
+            width: 80vw;
+            height: 30px
+        }
 
+        #search_bar {
+            align-items: center;
+            margin: -10px 10px
+        }
+
+        input#search_bar_ip {
+            margin: 10px 10px;
+            width: 300px;
+            height: 29px;
+            border: 2px solid black;
+            padding-left: 23px;
+            border-radius: 30px;
+            background-color: rgb(36 36 36);
+            color: white;
+        }
+
+        input#search_bar_ip:hover {
+            margin: 10px 10px;
+            width: 300px;
+            height: 29px;
+            border: 2px solid black;
+            padding-left: 23px;
+            border-radius: 30px;
+            background-color: rgb(38 38 38 / 71%);
+            color: white;
         }
     </style>
 </head>
@@ -151,6 +141,12 @@
                         </svg>
                     </div>
                 </div>
+                <div id="search_bar">
+                    <form method="post" name="f1" action="search.php">
+                        <input type="text" id="search_bar_ip" placeholder="Search" name="t1">
+                        <input type="button" value="" id="search_icon">
+                    </form>
+                </div>
                 <div class="App__Log_Reg">
                     <button class="App__user" onclick="">
                         <div class="App__figure">
@@ -161,7 +157,7 @@
                                     fill="#fff"></path>
                             </svg>
                         </div>
-                        <span class="App__username"><a href="login.html" target="" class="a1">Login</a></span>
+                        <div class="App__username"><a href="login.html" target="" class="a1">Login</a></div>
                     </button>
                     <button class="App__user2">
                         <div class="App__figure">
@@ -172,7 +168,7 @@
                                     fill="#fff"></path>
                             </svg>
                         </div>
-                        <span class="App__username"><a href="register.html" target="" class="a2">Sign Up</a></span>
+                        <div class="App__username"><a href="register.html" target="" class="a2">Sign Up</a></div>
                     </button>
                 </div>
             </div>
@@ -257,30 +253,8 @@
         <div class="App__main-view" id="main_view">
             <div class="App__top-gradient"></div>
             <div class="App__header-placeholder"></div>
-            <div class="welcome_message">
-                <h2 align="center" id="welcome_message">Welcome User!</h2>
-                <form name="f1" method="post" action="login.php">
-                    <table border="0" align="center">
-                        <tr><br></tr>
-                        <tr>
-                            <td>Username:</td>
-                            <td><input type="text" name="t1"><br></td>
-                        </tr>
-                        <tr><br></tr>
-                        <tr>
-                            <td>Password:</td>
-                            <td><input type="Password" name="t2"></td>
-                        </tr>
-                        <tr align="center">
-                            <td colspan="2"><br><br><input type="submit" value="Login" class="btn"></td>
-                        </tr>
-                        <tr align="center">
-                            <td colspan="2"><input type="reset" value="Clear" class="btn" id="btn2"></td>
-                        </tr>
-                    </table>
-                    <p id="reg">Not a User <a href="register.html" id="reg">Register Now!</a></p>
-                </form>
-            </div>
+
+
         </div>
     </div>
 </body>

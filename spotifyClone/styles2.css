@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -146,8 +145,11 @@
 }
 
 .App__Log_Reg {
-    float: right;
-    display: inline-flex;
+    /* float: right; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    margin: -3px 40px;
 }
 
 .App__user {

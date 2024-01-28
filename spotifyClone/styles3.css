@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -146,8 +145,11 @@
 }
 
 .App__Log_Reg {
-    float: right;
-    display: inline-flex;
+    /* float: right; */
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: right;
+    margin: -3px 40px;
 }
 
 .App__user {
@@ -295,23 +297,32 @@
 }
 
 .App__section-grid-item:nth-of-type(1) .featured-image {
-    background-image: url("https://i.scdn.co/image/239649cd6dfd2296632d269b115d1e147695a0a8");
+    background-image: url("madeforyou.png");
 }
 
 .App__section-grid-item:nth-of-type(2) .featured-image {
-    background-image: url("https://i.scdn.co/image/1ec33564b0c0c1db64babdcf678a5246a4605c6f");
+    background-image: url("charts.png");
 }
 
 .App__section-grid-item:nth-of-type(3) .featured-image {
-    background-image: url("https://i.scdn.co/image/50a4653e91a472a85b6759225ffd5a2f71d8a9ba");
+    background-image: url("newrelease.png");
 }
 
 .App__section-grid-item:nth-of-type(4) .featured-image {
-    background-image: url("https://i.scdn.co/image/8feb7ba9f991af98307ae1de9c491c43754765dc");
+    background-image: url("podcastchart");
 }
 
 .App__section-grid-item:nth-of-type(5) .featured-image {
-    background-image: url("https://i.scdn.co/image/15488d6d07e4d31d388be232f921569bd32d1ac3");
+    background-image: url("pdbewrelease.png");
+}
+.App__section-grid-item:nth-of-type(1) .featured-image {
+    background-image: url("hindi.png");
+}
+.App__section-grid-item:nth-of-type(1) .featured-image {
+    background-image: url("liveevent.png");
+}
+.App__section-grid-item:nth-of-type(1) .featured-image {
+    background-image: url("trends.png");
 }
 
 .App__section-grid-item h3 {
