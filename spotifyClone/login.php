@@ -12,7 +12,7 @@ while ($row = mysqli_fetch_assoc($result)) {
     if ($row["uname"] == $un && $row["pass"] == $pd) {
         $_SESSION["suser"] = $un;
         $_SESSION["spass"] = $pd;
-        header("location:firstpage.html");
+        header("location:firstpage.php");
     }
 }
 mysqli_close($conn);

@@ -8,16 +8,16 @@ let masterSongName = document.getElementById('masterSongName');
 let songItems = Array.from(document.getElementsByClassName('songItem'));
 
 let songs = [
-    { songName: "On & On-Cartoon, Daniel Levi", filePath: "songs/1.mp3", coverPath: "covers/1.jpg" },
-    { songName: "Invincible-DEAF KEV", filePath: "songs/2.mp3", coverPath: "covers/2.jpg" },
-    { songName: "Mortals-Warriyo, Laura Brehm", filePath: "songs/3.mp3", coverPath: "covers/3.jpg" },
-    { songName: "Shine-Spektrem", filePath: "songs/4.mp3", coverPath: "covers/4.jpg" },
-    { songName: "Why We Lose-Cartoon, Coleman Trapp", filePath: "songs/5.mp3", coverPath: "covers/5.jpg" },
-    { songName: "Sky High-Elektronomia", filePath: "songs/6.mp3", coverPath: "covers/6.jpg" },
+    { songName: "On & On-Cartoon, Daniel Levi", filePath: "On & On-Cartoon.mp3", coverPath: "covers/1.jpg" },
+    { songName: "Invincible-DEAF KEV", filePath: "DEAF KEV - Invincible [NCS Release].mp3", coverPath: "covers/2.jpg" },
+    { songName: "Royalty, Laura Brehm", filePath: "Egzod & Maestro Chives - Royalty (Don Diablo Remix) [NCS Release].mp3", coverPath: "covers/3.jpg" },
+    { songName: "Shine-Spektrem", filePath: "Spektrem - Shine [NCS Release].mp3", coverPath: "covers/4.jpg" },
+    { songName: "Why We Lose-Cartoon, Coleman Trapp", filePath: "Cartoon, Jéja - Why We Lose (feat. Coleman Trapp) [NCS Release].mp3", coverPath: "covers/5.jpg" },
+    { songName: "Sky High-Elektronomia", filePath: "Elektronomia - Sky High [NCS Release].mp3", coverPath: "covers/6.jpg" },
     { songName: "Symbolism-Electro-Light", filePath: "songs/7.mp3", coverPath: "covers/7.jpg" },
-    { songName: "Heroes Tonight-Janji, Johnning", filePath: "songs/8.mp3", coverPath: "covers/8.jpg" },
-    { songName: "My Heart-Different Heaven, EH!DE", filePath: "songs/9.mp3", coverPath: "covers/9.jpg" },
-    { songName: "Feel Good-Syn Cole", filePath: "songs/10.mp3", coverPath: "covers/10.jpg" },
+    { songName: "Heroes Tonight-Janji, Johnning", filePath: "Janji - Heroes Tonight (feat. Johnning) [NCS Release].mp3", coverPath: "covers/8.jpg" },
+    { songName: "My Heart-Different Heaven, EH!DE", filePath: "Different Heaven & EH!DE - My Heart [NCS Release] (1).mp3", coverPath: "covers/9.jpg" },
+    { songName: "Feel Good-Syn Cole", filePath: "Syn Cole - Feel Good [NCS Release].mp3", coverPath: "covers/10.jpg" },
 ]
 
 songItems.forEach((element, i) => {

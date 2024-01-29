@@ -122,6 +122,17 @@
             background-color: rgb(38 38 38 / 71%);
             color: white;
         }
+
+        input#search_icon {
+            height: 24px;
+            width: 24px;
+            background-image: url(search_icon.png);
+            background-color: transparent;
+            background-size: cover;
+            border: none;
+            position: relative;
+            top: 6px;
+        }
     </style>
 </head>
 
@@ -144,7 +155,7 @@
                 <div id="search_bar">
                     <form method="post" name="f1" action="search.php">
                         <input type="text" id="search_bar_ip" placeholder="Search" name="t1">
-                        <input type="button" value="" id="search_icon">
+                        <input type="submit" value="" id="search_icon">
                     </form>
                 </div>
                 <div class="App__Log_Reg">

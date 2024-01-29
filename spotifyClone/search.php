@@ -4,15 +4,16 @@ include("dbconnect.php");
 ?>
 <?php
 $song = $_POST['t1'];
-$sql = "SELECT * FROM registration";
+$sql = "SELECT * FROM tracks";
 $result = mysqli_query($conn, $sql);
 
 while ($row = mysqli_fetch_assoc($result)) {
-    if ($row["uname"] == $un && $row["pass"] == $pd) {
-        $_SESSION["suser"] = $un;
-        $_SESSION["spass"] = $pd;
-        header("location:firstpage.html");
+    if ($row["song"] == $song) {
+        $_SESSION["song"] = $song;
+        $_SESSION['artist'] = $row['artist'];
+        $_SESSION['duration'] = $row['duratuin'];
+
+        header("location:search2.php");
     }
 }
-mysqli_close($conn);
 ?>

@@ -95,6 +95,7 @@
     border-top: 1px solid #202020;
     height: var(--now-playing-bar-height);
     z-index: 4;
+    display: none;
 }
 
 .App__main-view {
@@ -102,7 +103,7 @@
     background-color: #121212;
     position: relative;
     z-index: 1;
-    max-height: calc(100vh - var(--now-playing-bar-height));
+    max-height: calc(111vh - var(--now-playing-bar-height));
     overflow-x: hidden;
     overflow-y: scroll;
     scrollbar-width: none;
